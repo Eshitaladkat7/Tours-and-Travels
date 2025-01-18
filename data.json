@@ -1,0 +1,17 @@
+{
+  "users": [
+    
+    {
+      "id": "0586",
+      "name": "anish",
+      "email": "anish123@gmail.com",
+      "dob": "2024-04-29",
+      "contact": "9999999999",
+      "members": "6",
+      "packageName": "Dubai package",
+      "days": "5 days",
+      "city": "Start City &amp; End city : Dubai",
+      "totalamount": 285000
+    }
+  ]
+}

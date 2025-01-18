@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS-FILES/bill.css">
+    <title>Document</title>
+</head>
+<body onload="admin()">
+  <div>
+    <h1>Confirm The Package & Complete The Purchase</h1>
+  </div>
+  <div class="shift">
+  <p class="background">Selected Package  Details </p>
+  <p class="tour">Rajasthan Tour</p>
+  <p class="Days">3 - 5 Days</p>
+  <h4 class="h4">Total</h4>
+  <input class="totalvalue" type="text" readonly>
+    <h4 class="Discount">Discount</h4>
+    <input type="text" class="Discountvalue" value="10%" readonly>
+    <h4 class="Total">GST</h2>
+      <input type="text" class="Gstext" value="18%" readonly>
+      <button type="submit" class="print" onclick=window.print() disabled>Print</button>
+      <!--onclick="window.print()"-->
+      
+      <input type="checkbox" class="Termsbox" required oninput="ch()">
+      <h6 class="TermText">I agree with plan and has gone through payment details</h6>
+      </div>
+      <!---->
+      <div class="textcolor">
+      <div class="shift2"></div>
+      <h2 class="shift2">Please Enter Details</h2>
+      <p class="text">Enter Billing Address</p>
+      <textarea class="text2" rows="4" cols="50"></textarea>
+      <p class="textcountry">Select Country</p>
+      <select name="country" id="country">
+        <!-- Options for countries will go here -->
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <!-- Add more options as needed -->
+      </select>
+      <p class="textstate">Select State</p>
+      <select name="state" id="state">
+        <!-- Options for states will go here -->
+        <option value="rajasthan">Rajasthan</option>
+        <option value="delhi">Delhi</option>
+        <option value="maharashtra">Maharashtra</option>
+        <!-- Add more options as needed -->
+      </select>
+      <label class="label">Start Date</label> <input  class="Date" type="date">
+      <label class="Mobile">Mobile Number</label> <input  class="Number" type="text" minlength="10">
+      <label class="payment">Mobile Payment</label>
+      <label class="pincode">Pincode</label><input type="text" class="pincodeinput">
+      <label class="pan-no">Pan no</label><input type="text" class="pan-no-input">
+      <p class="Note">Note: When You Print This Page select Landspace option</p>
+      <p class="method">Works with Gpay Phone pay</p>
+      <label class="totalAmount">Total Amount</label>
+      <input type="text" class="totalAmountinput" readonly>
+      
+      <button class="img-button" type="submit" value="Scan Here">Click here to Pay</button>
+      <img src="./IMG/QR_Code.png" class="img-hide">
+    </div>
+    <script src="./JS-FILES/register.js"></script>
+    </body>
+</html>

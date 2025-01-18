@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="./CSS-FILES/login.css">
+  <style>
+    #input-date[placeholder]{
+      text-align: center;
+    }
+  </style>
+</head>
+<body onload="admin()">
+    <div class="container">
+        <div class="overlay">
+          <h1 class="reg">Login</h1>
+          <form onsubmit="Login()">
+            <input type="text"  placeholder="ENTER Your Email" class="input-field" required>
+            <input type="password"  placeholder="Enter Your Phone" class="input-field" required><br>
+          
+            <button type="submit" class="submit-btn">Login</button>
+          </form>
+        </div>
+      </div>
+      <script src="./JS-FILES/register.js"></script>
+</body>
+</html>
+   

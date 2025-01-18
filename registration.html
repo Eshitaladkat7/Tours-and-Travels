@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGISTRATION</title>
+  <link rel="stylesheet" href="./CSS-FILES/registration.css">
+  <style>
+    #input-date[placeholder]{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="overlay">
+          <h1 class="reg">REGISTRATION</h1>
+          <form onsubmit="register()">
+            <input type="text" name="name" placeholder="ENTER YOUR NAME" class="input-field" required>
+            <input type="email" name="email" placeholder="E-MAIL" class="input-field" required>
+            <input type="tel" name="contact" placeholder="MOBILE NO." maxlength="10" class="input-field" required>
+            <input type="date" name="dob" placeholder="DATE OF BIRTH" id="input-date" required>
+            <input type="number" name="members" placeholder="NUMBER OF MEMBERS" class="input-field" required><br>
+            <button type="submit" class="submit-btn ">REGISTER</button>
+          </form>
+          <a href="./Login.html"><button type="submit" class="Login-btn ">Login</button></a><br>
+          <label class="terms">*TERMS & CONDITIONS</label>
+        </div>
+      </div>
+
+      <script src="./JS-FILES/register.js"></script>
+</body>
+</html>
